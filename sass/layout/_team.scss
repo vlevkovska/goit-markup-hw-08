@@ -1,0 +1,83 @@
+.team {
+  background-color: var(--team-color);
+}
+
+.team__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-set__item--direction {
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+// .card-set__item--direction {
+//   flex-basis: calc(100% / 4 - 30px);
+// margin-left: 30px;
+// margin-top: 30px;
+// background: #ffffff;
+// box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//   0px 2px 1px rgba(0, 0, 0, 0.2);
+// border-radius: 0px 0px 4px 4px;
+// }
+
+.name-card__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.name-card__text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.name-card {
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.name-card__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-main-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--background-color);
+  }
+}
+
+.name-card__icons {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}

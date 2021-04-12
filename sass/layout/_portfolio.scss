@@ -1,0 +1,44 @@
+.examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-set {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.button-set__item {
+  margin-right: 8px;
+}
+
+.button-filter {
+  border-radius: 4px;
+  min-width: 73px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  display: block;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body .button-filter:hover,
+body .button-filter:focus,
+body .button-filter:active {
+  background-color: var(--button-color);
+  color: var(--background-color);
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}

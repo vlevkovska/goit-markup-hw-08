@@ -1,0 +1,54 @@
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  //   display: block;
+  max-width: 100%;
+  //   height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.adress {
+  font-style: normal;
+}
+
+// section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
