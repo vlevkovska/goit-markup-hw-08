@@ -88,6 +88,13 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+
+  flex-wrap: wrap;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 }
 
 .agreement-label__checkbox {
